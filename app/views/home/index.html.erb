@@ -1,16 +1,17 @@
 <% if current_user %>
 
-    <h3>Organization: <%= @tenant.name %></h3>
+    <h3 class="pull-right">Organization: <%= @tenant.name %></h3>
+    <%= render 'projects/list' %>
 
 <% else %>
 
     <div class="jumbotron">
 
-      <h2>Welcome to the Project Management Application!</h2>
+      <h2>Welcome to the Project Management Tool with AnkaEngine!</h2>
 
       <p class="lead">
 
-        You'll love managing your project with our SaaS application. Please take a look at our great plans
+        You'll love managing your project with our AnkaEngine. Please take a look at our great plans
 
       </p>
 
