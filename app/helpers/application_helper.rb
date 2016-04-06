@@ -29,7 +29,12 @@ module ApplicationHelper
     flash_messages.join("\n").html_safe
 
   end
-def tenant_name(tenant_id)
-  Tenant.find(tenant_id).name
-end
+
+  def tenant_name(tenant_id)
+    Tenant.find(tenant_id).name
+  end
+
+  def s3_link(tenant_id, artifcat_key)
+    link_to artifcat_key, "#{artifcat_key}", class: "main-link", target: 'new'
+  end
 end
