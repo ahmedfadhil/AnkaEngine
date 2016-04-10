@@ -24,6 +24,7 @@ gem "twitter-bootstrap-rails"
 gem 'devise-bootstrap-views'
 gem 'bootstrap-datepicker-rails'
 gem 'aws-sdk'
+gem 'stripe'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
